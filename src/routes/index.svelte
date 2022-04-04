@@ -1,7 +1,19 @@
-<script>
-	let isFriday = new Date().getDay() === 5;
-	let daysleft = 5 - new Date().getDay();
+<script lang="ts">
+	enum days {
+		monday = 1,
+		tuesday,
+		wednesday,
+		thursday,
+		friday,
+		saturday,
+		sunday
+	}
+	const today = new Date().getDay();
+	const isFriday = today === days.friday;
+	const daysleft = days.friday - today;
 </script>
+
+{@debug isFriday, daysleft}
 
 <h1>Er det endelig fredag?</h1>
 {#if isFriday}
