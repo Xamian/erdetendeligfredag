@@ -15,9 +15,16 @@
 
 {@debug isFriday, daysleft}
 
+<title>Beer day?</title>
+
 <h1>Er det endelig fredag?</h1>
 {#if isFriday}
 	<p>Ja, det er fredag!</p>
 {:else}
 	<p>Nej, det er ikke fredag, men der er kun {daysleft} dage til!</p>
 {/if}
+
+<footer>
+	<p><a href="https://max-it.dk">max-it.dk</a> &copy; 2022</p>
+	<p>Highly advanced <a href="https://github.com/xamian/erdetendeligfredag">code</a> that can figure out if it is indeed friday.</p>
+</footer>
