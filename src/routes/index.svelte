@@ -10,7 +10,7 @@
 	}
 	const today = new Date().getDay();
 	const isFriday = today === days.friday;
-	const daysleft = days.friday - today;
+	const daysleft = (days.friday - today + 7) % 7;
 </script>
 
 {@debug isFriday, daysleft}
@@ -26,5 +26,8 @@
 
 <footer>
 	<p><a href="https://max-it.dk">max-it.dk</a> &copy; 2022</p>
-	<p>Highly advanced <a href="https://github.com/xamian/erdetendeligfredag">code</a> that can figure out if it is indeed friday.</p>
+	<p>
+		Highly advanced <a href="https://github.com/xamian/erdetendeligfredag">code</a> that can figure out
+		if it is indeed friday.
+	</p>
 </footer>
