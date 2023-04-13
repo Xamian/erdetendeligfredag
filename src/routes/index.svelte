@@ -25,7 +25,7 @@
 {/if}
 
 <footer>
-	<p><a href="https://max-it.dk">max-it.dk</a> &copy; 2022</p>
+	<p><a href="https://max-it.dk">max-it.dk</a> &copy; 2022-2023</p>
 	<p>
 		Highly advanced <a href="https://github.com/xamian/erdetendeligfredag">code</a> that can figure out
 		if it is indeed friday.
