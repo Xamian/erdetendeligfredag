@@ -21,7 +21,7 @@
 {#if isFriday}
 	<p>Ja, det er fredag!</p>
 {:else}
-	<p>Nej, det er ikke fredag, men der er kun {daysleft} dage til!</p>
+	<p>Nej, det er ikke fredag, men der er kun {daysleft} {daysleft > 1 ? 'dage' : 'dag'} til!</p>
 {/if}
 
 <footer>
